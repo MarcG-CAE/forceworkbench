@@ -13,7 +13,7 @@ if ($c->isAjax()) {
 require_once "header.php";
 ?>
 
-<p class="instructions">Subscribe to a Push Topic to stream query updates:</p>
+<p class="instructions">xSubscribe to a Push Topic to stream query updates:</p>
 
 <div id="messages">
     <?php echo $c->getMessages(); ?>

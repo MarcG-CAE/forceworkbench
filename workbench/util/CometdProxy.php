@@ -26,7 +26,7 @@ class CometdProxy
 
     private function newProxy()
     {
-        $forwardPath = "https://cae--sit.my.salesforce.com/cometd/$this->apiVersion";
+        $forwardPath = "/cometd/$this->apiVersion";
         $proxy = new PhpReverseProxy();
         $proxy->headers[] = "Authorization: OAuth $this->sessionId";
         $proxy->host = $this->host;

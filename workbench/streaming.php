@@ -13,7 +13,7 @@ if ($c->isAjax()) {
 require_once "header.php";
 ?>
 
-<p class="instructions">xSubscribe to a Push Topic to stream query updates:</p>
+<p class="instructions">Subscribe to a Push Topic to stream query updates:</p>
 
 <div id="messages">
     <?php echo $c->getMessages(); ?>
@@ -117,7 +117,7 @@ require_once "header.php";
 if ($c->isEnabled()) {
     addFooterScript("<script type='text/javascript' src='" . 'static-unversioned/script/dojo/dojo/dojo.js' . "'></script>");
     addFooterScript("<script type='text/javascript' src='" . getPathToStaticResource('/script/CometDReplayExt.js') . "'></script>");
-    //addFooterScript("<script type='text/javascript' src='" . getPathToStaticResource('/script/streamingClient.js') . "'></script>");
+    addFooterScript("<script type='text/javascript' src='" . getPathToStaticResource('/script/streamingClient.js') . "'></script>");
     addFooterScript("<script type='text/javascript'>var wbStreaming = ". $c->getStreamingConfig() . ";</script>");
 }
 require_once "footer.php";
